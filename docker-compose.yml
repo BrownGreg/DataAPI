@@ -4,6 +4,7 @@ services:
   dataapi:
     build: .
     container_name: dataapi
+    command: python3 app.py
     ports:
       - "80:80"
     environment:

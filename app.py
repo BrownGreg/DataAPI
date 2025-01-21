@@ -51,8 +51,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        # Vous pouvez ajouter ici la logique de vérification du login et du mot de passe
-        if username == 'admin' and password == 'password':  # Exemple de vérification simple
+        if username == 'admin' and password == 'password': 
             return redirect(url_for('index'))
         else:
             error = 'Nom d\'utilisateur ou mot de passe incorrect'
