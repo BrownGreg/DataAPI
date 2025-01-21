@@ -6,7 +6,7 @@ COPY . /DataAPI
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8000
 
 ENV NAME World
 

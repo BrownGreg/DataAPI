@@ -6,11 +6,11 @@ services:
     container_name: dataapi
     command: python app.py
     ports:
-      - "80"
+      - "8000"
     environment:
       - NAME=World
     volumes:
-      - .:/app
+      - .:/DataAPI
     networks:
       - app-network
 
